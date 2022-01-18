@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import ReactPlayer from 'react-player';
+import { useState } from 'react';
+import Menu from './Menu';
+import { Shows } from './pages/Pages';
+
 
 function App() {
+  var [currentPage, setCurrentPage] = useState(Shows)
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        His Father's Voice
       </header>
+      <div className='App-body'>
+        <Menu setPage={setCurrentPage} />
+        <div className='page'>
+          {currentPage}
+        </div>
+      </div>
     </div>
   );
 }
