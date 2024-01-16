@@ -1,5 +1,7 @@
+import Show from './../Show';
+
 export default function Shows() {
     return(
-        <div>Shows</div>
+        <Show venue="Dolan's" city="Limerick" country="Ireland" date="20/03/2022" />
     )
 }

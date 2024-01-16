@@ -1,5 +1,5 @@
 export default function Contact() {
     return(
-        <div>Contact</div>
+        <div>We can be contacted at {process.env.REACT_APP_EMAIL}.</div>
     )
 }

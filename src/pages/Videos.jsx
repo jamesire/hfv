@@ -1,9 +1,10 @@
 import ReactPlayer from "react-player";
+import { useEffect } from "react";
 import './../styling.css';
 
 export default function Videos() {
     return(
-        <>
+        <div id="video-container">
             <div className='video'>
                 <ReactPlayer
                     url="https://www.youtube.com/watch?v=VRdw68u7D50"
@@ -24,6 +25,6 @@ export default function Videos() {
                 />
                 Close
             </div>
-        </>
+        </div>
     )
 }
