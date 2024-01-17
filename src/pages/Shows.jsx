@@ -1,7 +1,24 @@
 import Show from './../Show';
+import { useEffect, useState } from 'react';
+import { readCsvFile } from './../helpers.js'
 
 export default function Shows() {
+    // useEffect(() => {
+    //     /*
+    //     const GetShows = async () => {
+    //         var showsList = await readCsvFile();
+    //         setShows([...shows, showsList]);
+    //     }
+
+    //     GetShows();
+    //     */
+    // }, [])
+
     return(
-        <Show venue="Dolan's" city="Limerick" country="Ireland" date="20/03/2022" />
+        <>
+            {/* {shows.map((show) => {
+                <Show venue={show.venue} city={show.city} country={show.country} date={show.date} />
+            })} */}
+        </>
     )
 }

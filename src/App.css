@@ -26,15 +26,16 @@
   font-size: 7vmin;
 }
 
+.App-header, .footer {
+  flex: none;
+}
+
 .App-link {
   color: #61dafb;
 }
 
 .line {
   color: rgb(255, 255, 255);
-}
-
-.App-body {
 }
 
 .menu {
@@ -50,13 +51,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  flex: auto;
 }

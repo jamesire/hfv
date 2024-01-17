@@ -15,7 +15,7 @@ function App() {
       </header>
       <div className='App-body'>
         <Menu setPage={setCurrentPage} />
-        <div className='page' style={{overflowY: "scroll"}}>
+        <div className='page'>
           {currentPage}
         </div>
       </div>
