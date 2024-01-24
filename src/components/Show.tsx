@@ -6,13 +6,14 @@ interface IShowProps {
     city: string;
     country: string;
     date: string;
+    note: string;
     ticket_link: string;
 }
 
-const Show: React.FC<IShowProps> = ({ venue, city, country, date, ticket_link }) => {
+const Show: React.FC<IShowProps> = ({ venue, city, country, date, note, ticket_link }) => {
   return (
     <div className='show'>
-        {venue}, {city}, {country} | {date} | <a className='ticket' rel="noreferrer" target='_blank' href={ticket_link}>Tickets</a>
+        {venue}, {city}, {country} | {note} | {date} | <a className='ticket' rel="noreferrer" target='_blank' href={ticket_link}>Tickets</a>
     </div>
   )
 }

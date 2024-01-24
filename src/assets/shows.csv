@@ -1,5 +1,2 @@
-venue,city,country,date,ticket_link
-Pharmacia,Limerick,Ireland,19/4/24,https://www.google.com
-Ulster Sports Club,Belfast,Ireland,25/4/24,https://www.google.com
-Whelan's (Upstairs),Dublin,Ireland,26/4/24,https://www.google.com
-Coughlan's,Cork,Ireland,28/4/24,https://www.google.com
+venue,city,country,date,note,ticket_link
+Workman's Cellar,Dublin,Ireland,Supporting Altered Hours,16/03/24,https://www.ticketmaster.ie/the-altered-hours-dublin-15-12-2023/event/18005F04BAB61AFF

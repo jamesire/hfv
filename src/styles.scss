@@ -1,6 +1,6 @@
 $header-height: 3.6vh; 
 $footer-height: 2.5vh;
-$main-height: calc(100vh - #{$header-height * 1.5 + $footer-height * 3.4});
+$main-height: calc(100vh - #{$header-height * 1.5 + $footer-height * 3.5});
 
 .header {
   display: flex;
@@ -176,7 +176,6 @@ $main-height: calc(100vh - #{$header-height * 1.5 + $footer-height * 3.4});
 .merch-item a {
   text-decoration: none;
   color: #ffffff;
-  padding: 10px 24px 0 24px;
   border-radius: 4px;
   transition: background-color 0.3s;
 }
@@ -201,4 +200,5 @@ $main-height: calc(100vh - #{$header-height * 1.5 + $footer-height * 3.4});
   justify-content: center;
   flex-wrap: wrap;
   overflow-y: auto;
+  overflow-x: hidden;
 }

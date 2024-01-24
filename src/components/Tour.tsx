@@ -8,6 +8,7 @@ interface ShowData {
     city: string;
     country: string;
     date: string;
+    note: string;
     ticket_link: string;
 }
 
@@ -34,7 +35,9 @@ const Tour: React.FC = () => {
 
     return (
         <div className='tour'>
-            {csvData.map((show) => {
+            {csvData.length == 0 ?
+                "No shows currently announced."
+            :csvData.map((show) => {
                 return <Show {...show} />
                 })
             }
