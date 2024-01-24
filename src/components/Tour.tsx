@@ -27,7 +27,6 @@ const Tour: React.FC = () => {
             delimiter: ",",
             complete: (results: any) => {
                 const showData: ShowData[] = results.data;
-                console.log(showData)
                 setCsvData(showData);
             },
           })

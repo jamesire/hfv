@@ -24,7 +24,6 @@ const Shop: React.FC = () => {
             delimiter: ",",
             complete: (results: any) => {
                 const showData: MerchData[] = results.data;
-                console.log(showData)
                 setCsvData(showData);
             },
           })
