@@ -15,9 +15,10 @@ interface ShowData {
 const Tour: React.FC = () => {
 
     const [csvData, setCsvData] = useState<ShowData[]>([]);
+    const [bodyText, setBodyText] = useState<string>('')
     
     useEffect(() => {
-        fetchCsvData();
+        fetchCsvData()
     }, []);
 
     const fetchCsvData = async () => {
@@ -29,6 +30,8 @@ const Tour: React.FC = () => {
             complete: (results: any) => {
                 const showData: ShowData[] = results.data;
                 setCsvData(showData);
+                if (showData.length == 0)
+                    setBodyText('No shows currently announced.');
             },
           })
     }
@@ -36,7 +39,7 @@ const Tour: React.FC = () => {
     return (
         <div className='tour'>
             {csvData.length == 0 ?
-                "No shows currently announced."
+                bodyText
             :csvData.map((show) => {
                 return <Show {...show} />
                 })
