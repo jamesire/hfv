@@ -1,40 +1,12 @@
 @font-face {
-  font-family: A2StandardSans;
-  src: url("fonts/A2\ Standard\ Sans\ Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: A2StandardSans;
-  src: url("fonts/A2\ Standard\ Sans\ Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: A2StandardSans;
-  src: url("fonts/A2\ Standard\ Sans\ Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: A2StandardSansCond;
-  src: url("fonts/A2\ Standard\ Sans\ Cond\ Regular.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: A2StandardSansCond;
-  src: url("fonts/A2\ Standard\ Sans\ Cond\ Medium.otf") format("opentype");
+  font-family: WorkSansRegular;
+  src: url("fonts/WorkSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 :root {
-  font-family: A2StandardSans, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: WorkSansRegular, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-size: 16px;
@@ -57,5 +29,5 @@ body {
   padding: 0;
   flex-direction: column;
   overflow: hidden;
-  font-family: A2StandardSans, serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: WorkSansRegular, serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
