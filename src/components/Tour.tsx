@@ -38,7 +38,7 @@ const Tour: React.FC = () => {
 
     return (
         <div className='tour'>
-            {csvData.length == 0 ?
+            {csvData.length === 0 ?
                 bodyText
             :csvData.map((show) => {
                 return <Show {...show} />
