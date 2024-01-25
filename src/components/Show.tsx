@@ -22,7 +22,7 @@ const Show: React.FC<IShowProps> = ({ venue, city, country, date, note, ticket_l
   const isGigOver = () => {
     const gigDate = parse(date, "dd/MM/yy", new Date())
     const currentDate = new Date();
-    return gigDate.getMilliseconds() > currentDate.getMilliseconds();
+    return gigDate < currentDate;
   }
 
   return (
