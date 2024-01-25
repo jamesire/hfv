@@ -24,7 +24,8 @@
     "xlsx": "^0.17.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "NODE_ENV=development react-scripts start",
+    "start": "NODE_ENV=production react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
