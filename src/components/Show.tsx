@@ -22,8 +22,6 @@ const Show: React.FC<IShowProps> = ({ venue, city, country, date, note, ticket_l
   const isGigOver = () => {
     const gigDate = parse(date, "dd/MM/yy", new Date())
     const currentDate = new Date();
-    if(process.env.REACT_APP_GENERATE_SOURCEMAP)
-      console.log("sourcemap");
 
     return gigDate < currentDate;
   }
