@@ -18,7 +18,6 @@ const Tour: React.FC = () => {
     const [bodyText, setBodyText] = useState<string>('')
     
     useEffect(() => {
-        console.log(process.env)
         fetchCsvData()
     }, []);
 
@@ -31,7 +30,7 @@ const Tour: React.FC = () => {
             complete: (results: any) => {
                 const showData: ShowData[] = results.data;
                 setCsvData(showData);
-                if (showData.length == 0)
+                if (showData.length === 0)
                     setBodyText('No shows currently announced.');
             },
           })
