@@ -18,6 +18,7 @@ const Tour: React.FC = () => {
     const [bodyText, setBodyText] = useState<string>('')
     
     useEffect(() => {
+        console.log(process.env)
         fetchCsvData()
     }, []);
 
