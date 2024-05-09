@@ -8,35 +8,13 @@ const Home: React.FC = () => {
         <div className='video-container'>
             <div className="player-wrapper">
                 <ReactPlayer className='react-player'
-                    url="https://www.youtube.com/watch?v=VRdw68u7D50"
+                    url="https://www.youtube.com/watch?v=ND_WpG6Wdls"
                     width='100%'
                     height='100%'
                     controls={true}
                 />
             </div>
-            <p>No Room for Romantics</p>
-        </div>
-        <div className='video-container'>
-            <div className="player-wrapper">
-                <ReactPlayer className='react-player'
-                    url="https://www.youtube.com/watch?v=nkSQZh2Xrs0"
-                    width='100%'
-                    height='100%'
-                    controls={true}
-                />
-            </div>
-            <p>In the Shade</p>
-        </div>
-        <div className='video-container'>
-            <div className="player-wrapper">
-                <ReactPlayer className='react-player'
-                    url="https://www.youtube.com/watch?v=TH52tN76gl4"
-                    width='100%'
-                    height='100%'
-                    controls={true}
-                />
-            </div>
-            <p>Close</p>
+            <p>Arm's Length</p>
         </div>
     </div>
   )
