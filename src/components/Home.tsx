@@ -8,6 +8,17 @@ const Home: React.FC = () => {
         <div className='video-container'>
             <div className="player-wrapper">
                 <ReactPlayer className='react-player'
+                    url="https://www.youtube.com/watch?v=BwidOaKZJaY"
+                    width='100%'
+                    height='100%'
+                    controls={true}
+                />
+            </div>
+            <p>The Blues</p>
+        </div>
+        <div className='video-container'>
+            <div className="player-wrapper">
+                <ReactPlayer className='react-player'
                     url="https://www.youtube.com/watch?v=ND_WpG6Wdls"
                     width='100%'
                     height='100%'
