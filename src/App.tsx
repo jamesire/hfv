@@ -4,6 +4,7 @@ import Body from './components/Body'
 import Nav from './components/Nav'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Contact from './components/Contact'
+import Newsletter from './components/Newsletter'
 import Home from './components/Home'
 import Shop from './components/Shop'
 import Tour from './components/Tour'
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/tour" element={renderRouteComponent(<Tour />)} />
           <Route path="/shop" element={renderRouteComponent(<Shop />)} />
           <Route path="/contact" element={renderRouteComponent(<Contact />)} />
+          <Route path="/newsletter" element={renderRouteComponent(<Newsletter />)} />
       </Routes>
       <Footer />
     </BrowserRouter>
