@@ -26,9 +26,13 @@ const Show: React.FC<IShowProps> = ({ venue, city, country, date, note, ticket_l
     return gigDate < currentDate;
   }
 
+  const getNote = () => {
+    return note === '' ? '' : `| ${note}`;
+  }
+
   return (
     <div className='show' style={{textDecoration: style}} >
-        {venue}, {city}, {country} | {note} | {date} | <a className='ticket' rel="noreferrer" target={isGigOver() ? '' : '_blank'} href={isGigOver() ? 'javascript:void(0);' : ticket_link}>Tickets</a>
+        {venue}, {city}, {country} {getNote()} | {date} | <a className='ticket' rel="noreferrer" target={isGigOver() ? '' : '_blank'} href={isGigOver() ? 'javascript:void(0);' : ticket_link}>Tickets</a>
     </div>
   )
 }
